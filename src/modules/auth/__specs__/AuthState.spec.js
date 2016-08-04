@@ -14,6 +14,7 @@ describe('AuthState', () => {
       const [nextState] = dispatch(initialState, AuthStateActions.onUserLoginSuccess(profile, token));
 
       // verify initial state for sanity
+
       expect(initialState.getIn(['auth', 'isLoggedIn'])).to.equal(false);
 
       // verify updated state
