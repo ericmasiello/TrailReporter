@@ -1,39 +1,15 @@
-![Pepperoni - Empowered by Futurice](/docs/pepperoni.png?v=2)
-Futurice React Native Starter Kit
-===
-[![Build Status](https://travis-ci.org/futurice/pepperoni-app-kit.svg?branch=master)](https://travis-ci.org/futurice/pepperoni-app-kit)
-[![React Native](https://img.shields.io/badge/react%20native-0.29-brightgreen.svg)](https://github.com/facebook/react-native)
-[![Sponsored](https://img.shields.io/badge/chilicorn-sponsored-brightgreen.svg)](http://spiceprogram.org/oss-sponsorship/)
-[![License](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)]()
-
-We :green_heart: building apps with React Native, because it helps us create high quality products for both major mobile platforms quickly and cost-effectively.
-
-Getting started on a new app just takes too damn long, though. Most apps need the same basic building blocks and developer infrastructure, and we are bored of reinventing the wheel time and time again.
-
-This Starter Kit reflects the best practices of React Native development we have discovered while building real-world applications for our customers. It is opinionated about tooling, patterns and development practices. It might not be a one-size-fits-all solution for everyone, but feel free to customize it for your needs, or just take inspiration from it.
-
-React Native Starter Kit is a part of [Pepperoni](http://getpepperoni.com), a framework for kickstarting digital product development.
+# TrailReporter
+This project was branched from Pepperoni project http://getpepperoni.com/
 
 ## Contents
 
-:warning: **WORK IN PROGRESS** |
-:star: **COMING SOON**
+### Getting started
 
-Not all of the below is yet fully implemented
+I recommend you have Node v6+ with NPM v3+. You must have have CocoaPods installed.
 
-### Application Blueprint
-
-* Always up-to-date [React Native](https://facebook.github.io/react-native/) scaffolding
-* Modular and well-documented structure for application code
-* [Redux](http://redux.js.org/) and [ImmutableJS](https://facebook.github.io/immutable-js/) for safe and **Reasonaboutable**:tm: state management
-* [Redux Loop](https://github.com/raisemarketplace/redux-loop) for Elm-style controlled side effects
-* Redux-managed Navigators for Stack-based and Tabbed navigation with NavigationExperimental
-* Disk-persisted application state caching for offline support and snappy startup performance
-* Clean and testable service layer for interacting with RESTful APIs
-* :warning: Sample app to show how to wire it all together
-* :star: JSON Web Token authentication
-* :star: Multi-environment configuration (dev, staging, production) for iOS and Android
-* :star: Built-in error handling and customizable error screens
+```bash
+npm i && cd ios; pod install
+```
 
 ### Testing Setup
 

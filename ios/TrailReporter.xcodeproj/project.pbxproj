@@ -69,6 +69,62 @@
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
 			remoteInfo = TrailReporter;
 		};
+		073AD6011D53CFDC002AB1E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 073AD5F51D53CFDC002AB1E0 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D8FC9B3A3A0CD2987EEE37BF831ADE3A;
+			remoteInfo = AFNetworking;
+		};
+		073AD6031D53CFDC002AB1E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 073AD5F51D53CFDC002AB1E0 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 46CADB0791DBCE6066B202E3E3FAF1B4;
+			remoteInfo = CocoaLumberjack;
+		};
+		073AD6051D53CFDC002AB1E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 073AD5F51D53CFDC002AB1E0 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 55C1C2DD48C26E0D07B9857EE075D630;
+			remoteInfo = Lock;
+		};
+		073AD6071D53CFDC002AB1E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 073AD5F51D53CFDC002AB1E0 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 27F22A6EDD6AFBBC95B8EF5493B2AD2C;
+			remoteInfo = "Lock-Auth0";
+		};
+		073AD6091D53CFDC002AB1E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 073AD5F51D53CFDC002AB1E0 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 38F86A065CD40E500EF12470C5068022;
+			remoteInfo = Masonry;
+		};
+		073AD60B1D53CFDC002AB1E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 073AD5F51D53CFDC002AB1E0 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5112E4AB981664975E057ADF0BC5BBAC;
+			remoteInfo = "Pods-TrailReporter";
+		};
+		073AD60D1D53CFDC002AB1E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 073AD5F51D53CFDC002AB1E0 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B8DECE11BE7558A7244CCF90179BC953;
+			remoteInfo = SimpleKeychain;
+		};
+		073AD60F1D53CFDC002AB1E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 073AD5F51D53CFDC002AB1E0 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = ED402947E371C9B5C86459326F19AD80;
+			remoteInfo = TouchIDAuth;
+		};
 		139105C01AF99BAD00B5F7CC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */;
@@ -97,62 +153,6 @@
 			remoteGlobalIDString = 5F0499EE1CAE9F4A006F6C05;
 			remoteInfo = A0RNLock;
 		};
-		4D5C6B151D5211B900925E42 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4D5C6B0A1D5211B800925E42 /* Pods.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D8FC9B3A3A0CD2987EEE37BF831ADE3A;
-			remoteInfo = AFNetworking;
-		};
-		4D5C6B171D5211B900925E42 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4D5C6B0A1D5211B800925E42 /* Pods.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 46CADB0791DBCE6066B202E3E3FAF1B4;
-			remoteInfo = CocoaLumberjack;
-		};
-		4D5C6B191D5211B900925E42 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4D5C6B0A1D5211B800925E42 /* Pods.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 55C1C2DD48C26E0D07B9857EE075D630;
-			remoteInfo = Lock;
-		};
-		4D5C6B1B1D5211B900925E42 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4D5C6B0A1D5211B800925E42 /* Pods.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 27F22A6EDD6AFBBC95B8EF5493B2AD2C;
-			remoteInfo = "Lock-Auth0";
-		};
-		4D5C6B1D1D5211B900925E42 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4D5C6B0A1D5211B800925E42 /* Pods.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 38F86A065CD40E500EF12470C5068022;
-			remoteInfo = Masonry;
-		};
-		4D5C6B1F1D5211B900925E42 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4D5C6B0A1D5211B800925E42 /* Pods.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 5112E4AB981664975E057ADF0BC5BBAC;
-			remoteInfo = "Pods-TrailReporter";
-		};
-		4D5C6B211D5211B900925E42 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4D5C6B0A1D5211B800925E42 /* Pods.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = B8DECE11BE7558A7244CCF90179BC953;
-			remoteInfo = SimpleKeychain;
-		};
-		4D5C6B231D5211B900925E42 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4D5C6B0A1D5211B800925E42 /* Pods.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = ED402947E371C9B5C86459326F19AD80;
-			remoteInfo = TouchIDAuth;
-		};
 		78C398B81ACF4ADC00677621 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */;
@@ -179,6 +179,7 @@
 		00E356EE1AD99517003FC87E /* TrailReporterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrailReporterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* TrailReporterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrailReporterTests.m; sourceTree = "<group>"; };
+		073AD5F51D53CFDC002AB1E0 /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
 		139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTSettings.xcodeproj; path = "../node_modules/react-native/Libraries/Settings/RCTSettings.xcodeproj"; sourceTree = "<group>"; };
 		139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = "../node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* TrailReporter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrailReporter.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -190,7 +191,6 @@
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = TrailReporter/main.m; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
 		4D5C6AFA1D5211A600925E42 /* A0RNLock.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = A0RNLock.xcodeproj; path = "../node_modules/react-native-lock/ios/A0RNLock.xcodeproj"; sourceTree = "<group>"; };
-		4D5C6B0A1D5211B800925E42 /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		938FD9977D1735DEB15300EE /* Pods-TrailReporter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrailReporter.release.xcconfig"; path = "Pods/Target Support Files/Pods-TrailReporter/Pods-TrailReporter.release.xcconfig"; sourceTree = "<group>"; };
@@ -286,6 +286,21 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		073AD5F61D53CFDC002AB1E0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				073AD6021D53CFDC002AB1E0 /* libAFNetworking.a */,
+				073AD6041D53CFDC002AB1E0 /* libCocoaLumberjack.a */,
+				073AD6061D53CFDC002AB1E0 /* libLock.a */,
+				073AD6081D53CFDC002AB1E0 /* Auth0.bundle */,
+				073AD60A1D53CFDC002AB1E0 /* libMasonry.a */,
+				073AD60C1D53CFDC002AB1E0 /* libPods-TrailReporter.a */,
+				073AD60E1D53CFDC002AB1E0 /* libSimpleKeychain.a */,
+				073AD6101D53CFDC002AB1E0 /* libTouchIDAuth.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		139105B71AF99BAD00B5F7CC /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -332,21 +347,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4D5C6B0B1D5211B800925E42 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				4D5C6B161D5211B900925E42 /* libAFNetworking.a */,
-				4D5C6B181D5211B900925E42 /* libCocoaLumberjack.a */,
-				4D5C6B1A1D5211B900925E42 /* libLock.a */,
-				4D5C6B1C1D5211B900925E42 /* Auth0.bundle */,
-				4D5C6B1E1D5211B900925E42 /* libMasonry.a */,
-				4D5C6B201D5211B900925E42 /* libPods-TrailReporter.a */,
-				4D5C6B221D5211B900925E42 /* libSimpleKeychain.a */,
-				4D5C6B241D5211B900925E42 /* libTouchIDAuth.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		78C398B11ACF4ADC00677621 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -358,7 +358,7 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				4D5C6B0A1D5211B800925E42 /* Pods.xcodeproj */,
+				073AD5F51D53CFDC002AB1E0 /* Pods.xcodeproj */,
 				4D5C6AFA1D5211A600925E42 /* A0RNLock.xcodeproj */,
 				146833FF1AC3E56700842450 /* React.xcodeproj */,
 				00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */,
@@ -496,8 +496,8 @@
 					ProjectRef = 4D5C6AFA1D5211A600925E42 /* A0RNLock.xcodeproj */;
 				},
 				{
-					ProductGroup = 4D5C6B0B1D5211B800925E42 /* Products */;
-					ProjectRef = 4D5C6B0A1D5211B800925E42 /* Pods.xcodeproj */;
+					ProductGroup = 073AD5F61D53CFDC002AB1E0 /* Products */;
+					ProjectRef = 073AD5F51D53CFDC002AB1E0 /* Pods.xcodeproj */;
 				},
 				{
 					ProductGroup = 00C302A81ABCB8CE00DB3ED1 /* Products */;
@@ -584,6 +584,62 @@
 			remoteRef = 00C302E31ABCB9EE00DB3ED1 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		073AD6021D53CFDC002AB1E0 /* libAFNetworking.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libAFNetworking.a;
+			remoteRef = 073AD6011D53CFDC002AB1E0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		073AD6041D53CFDC002AB1E0 /* libCocoaLumberjack.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCocoaLumberjack.a;
+			remoteRef = 073AD6031D53CFDC002AB1E0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		073AD6061D53CFDC002AB1E0 /* libLock.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLock.a;
+			remoteRef = 073AD6051D53CFDC002AB1E0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		073AD6081D53CFDC002AB1E0 /* Auth0.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = Auth0.bundle;
+			remoteRef = 073AD6071D53CFDC002AB1E0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		073AD60A1D53CFDC002AB1E0 /* libMasonry.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libMasonry.a;
+			remoteRef = 073AD6091D53CFDC002AB1E0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		073AD60C1D53CFDC002AB1E0 /* libPods-TrailReporter.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libPods-TrailReporter.a";
+			remoteRef = 073AD60B1D53CFDC002AB1E0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		073AD60E1D53CFDC002AB1E0 /* libSimpleKeychain.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSimpleKeychain.a;
+			remoteRef = 073AD60D1D53CFDC002AB1E0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		073AD6101D53CFDC002AB1E0 /* libTouchIDAuth.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libTouchIDAuth.a;
+			remoteRef = 073AD60F1D53CFDC002AB1E0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		139105C11AF99BAD00B5F7CC /* libRCTSettings.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -610,62 +666,6 @@
 			fileType = archive.ar;
 			path = libA0RNLock.a;
 			remoteRef = 4D5C6AFE1D5211A600925E42 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		4D5C6B161D5211B900925E42 /* libAFNetworking.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libAFNetworking.a;
-			remoteRef = 4D5C6B151D5211B900925E42 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		4D5C6B181D5211B900925E42 /* libCocoaLumberjack.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libCocoaLumberjack.a;
-			remoteRef = 4D5C6B171D5211B900925E42 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		4D5C6B1A1D5211B900925E42 /* libLock.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libLock.a;
-			remoteRef = 4D5C6B191D5211B900925E42 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		4D5C6B1C1D5211B900925E42 /* Auth0.bundle */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = Auth0.bundle;
-			remoteRef = 4D5C6B1B1D5211B900925E42 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		4D5C6B1E1D5211B900925E42 /* libMasonry.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libMasonry.a;
-			remoteRef = 4D5C6B1D1D5211B900925E42 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		4D5C6B201D5211B900925E42 /* libPods-TrailReporter.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = "libPods-TrailReporter.a";
-			remoteRef = 4D5C6B1F1D5211B900925E42 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		4D5C6B221D5211B900925E42 /* libSimpleKeychain.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libSimpleKeychain.a;
-			remoteRef = 4D5C6B211D5211B900925E42 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		4D5C6B241D5211B900925E42 /* libTouchIDAuth.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libTouchIDAuth.a;
-			remoteRef = 4D5C6B231D5211B900925E42 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		78C398B91ACF4ADC00677621 /* libRCTLinking.a */ = {
