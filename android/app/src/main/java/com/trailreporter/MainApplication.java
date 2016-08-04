@@ -1,4 +1,4 @@
-package com.pepperoniapptemplate;
+package com.trailreporter;
 
 import android.app.Application;
 import android.util.Log;
