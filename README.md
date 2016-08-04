@@ -1,14 +1,28 @@
-# TrailReporter
+# Trail Reporter
 This project was branched from Pepperoni project http://getpepperoni.com/
 
 ## Contents
 
 ### Getting started
 
+#### Install Dependencies
 I recommend you have Node v6+ with NPM v3+. You must have have CocoaPods installed.
 
 ```bash
 npm i && cd ios; pod install
+```
+
+#### Create Auth0 configuration
+```bash
+cp env.example.js env.js
+```
+Open up env.js and enter the Trail Reporter ClientID and Domain. You can get these from Eric.
+```js
+//env.js
+module.exports = {
+  AUTH0_CLIENT_ID: '<CLIENT_ID_GOES_HERE>',
+  AUTH0_DOMAIN: '<DOMAIN_GOES_HERE>'
+};
 ```
 
 ### Testing Setup
