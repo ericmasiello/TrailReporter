@@ -1,9 +1,11 @@
 import {combineReducers} from 'redux';
 import AuthStateReducer from '../modules/auth/AuthState';
+import {LocationReducer} from '../modules/location';
 
 const reducers = combineReducers({
   // Authentication/login state
-  auth: AuthStateReducer
+  auth: AuthStateReducer,
+  location: LocationReducer
 });
 
 export default function mainReducer(state, action) {
