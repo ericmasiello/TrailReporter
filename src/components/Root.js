@@ -1,14 +1,23 @@
 import React, {Component} from 'react';
 import {View, StyleSheet, Navigator} from 'react-native';
-import * as auth0 from '../../services/auth0';
-import DeveloperMenu from '../../components/DeveloperMenu';
+import * as auth0 from '../services/auth0';
+import DeveloperMenu from '../components/DeveloperMenu';
 //import ROUTES, {DEFAULT_ROUTE} from '../../config/routes';
-import {HomeContainer, LocationPermissionsContainer} from '../location/';
+import {HomeContainer, LocationPermissionsContainer} from '../modules/start';
+import {PhotoContainer} from '../modules/photo';
+import {IssueContainer} from '../modules/issue';
+import {AdditionalInfoContainer} from '../modules/additionalInfo';
+import {SaveSuccessContainer, SaveFailureContainer} from '../modules/complete';
 
 const DEFAULT_ROUTE = 'HOME';
 const ROUTES = {
   HOME: HomeContainer,
-  LOCATION_PERMISSIONS: LocationPermissionsContainer
+  LOCATION_PERMISSIONS: LocationPermissionsContainer,
+  TAKE_PHOTO: PhotoContainer,
+  SELECT_ISSUE: IssueContainer,
+  ADDITIONAL_INFO: AdditionalInfoContainer,
+  SAVE_SUCCESS: SaveSuccessContainer,
+  SAVE_ERROR: SaveFailureContainer
 };
 
 export default class Root extends Component {
@@ -29,9 +38,6 @@ export default class Root extends Component {
     };
 
     const RenderedView = ROUTES[route.name] || ROUTES[DEFAULT_ROUTE];
-    debugger;
-    //const RenderedView = Location.HomeContainer;
-
     return <RenderedView {...props} />;
   }
 

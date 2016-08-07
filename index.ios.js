@@ -1,6 +1,6 @@
 import {Provider} from 'react-redux';
 import store from './src/redux/store';
-import Root from './src/modules/root/index';
+import Root from './src/components/Root';
 
 import React from 'react';
 import {AppRegistry} from 'react-native';

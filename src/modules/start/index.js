@@ -2,19 +2,26 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import Home from './Home';
 import LocationPermissions from './LocationPermissions';
+import LocationHOC from './LocationHOC';
+import WorkflowHOC from '../../components/WorkflowHOC';
 
 const INITIAL_LOCATION_STATE = {
-  lat: 0,
-  lng: 0
-}
+  accuracy: 0,
+  altitude: 0,
+  altitudeAccuracy: 0,
+  heading: 0,
+  latitude: 0,
+  longitude: 0,
+  speed: 0
+};
 
 // Actions
 const SET_CURRENT_LOCATION = 'AppState/SET_CURRENT_LOCATION';
 
-export function onUserSetLocation(lat, lng) {
+export function onUserSetLocation(payload) {
   return {
     type: SET_CURRENT_LOCATION,
-    payload: {lat, lng}
+    payload
   };
 }
 
@@ -29,24 +36,8 @@ export function LocationReducer(state = INITIAL_LOCATION_STATE, action = {}) {
 
 
 function mapStateToProps({location}) {
-  debugger;
   return {location};
 };
 
-export const HomeContainer = connect(mapStateToProps, {onUserSetLocation})(Home);
-export const LocationPermissionsContainer = connect(mapStateToProps, {onUserSetLocation})(LocationPermissions);
-
-// var c = connect;
-// var H = Home;
-// var LP = LocationPermissions;
-// var HC = HomeContainer;
-// var LPC = LocationPermissionsContainer;
-
-// debugger;
-//
-// export default {
-//   HomeContainer,
-//   LocationPermissionsContainer,
-//   LocationReducer,
-//   onUserSetLocation
-// }
+export const HomeContainer = connect(mapStateToProps, {onUserSetLocation})(LocationHOC(Home));
+export const LocationPermissionsContainer = connect(mapStateToProps, {onUserSetLocation})(LocationHOC(LocationPermissions));

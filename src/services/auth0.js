@@ -1,6 +1,6 @@
 import * as env from '../../env';
 import Auth0Lock from 'react-native-lock';
-import * as AuthStateActions from '../modules/auth/AuthState';
+import * as AuthStateActions from '../modules/auth/';
 import store from '../redux/store';
 const {Platform} = require('react-native');
 
