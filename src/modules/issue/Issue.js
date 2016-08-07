@@ -1,18 +1,31 @@
 import React, {Component} from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import {View, ListView, StyleSheet} from 'react-native';
 import Button from '../../components/Button';
 import LinkButton from '../../components/LinkButton';
+import BaseText from '../../components/BaseText';
 import WorkflowHOC from '../../components/WorkflowHOC';
+import {COMMON_STYLES, BRAND_COLOR} from '../../styles/global';
 
 export class Issue extends Component {
   constructor(props) {
     super(props);
+
+    const ds = new ListView.DataSource({
+      rowHasChanged: (r1, r2) => r1 !== r2
+    });
+
+    this.state = {
+      dataSource: ds.cloneWithRows(['row 1', 'row 2']),
+    };
   }
+
   render() {
     return (
-      <View style={styles.view}>
-        <Text style={styles.viewText}>This is the issue view</Text>
-        <View>
+      <View style={[COMMON_STYLES.pageContainer, styles.view]}>
+        <ListView
+          dataSource={this.state.dataSource}
+          renderRow={(rowData) => <BaseText>{rowData}</BaseText>} />
+        <View style={COMMON_STYLES.buttonBar}>
           <LinkButton onPress={this.props.goBack}>Back</LinkButton>
           <Button onPress={this.props.goTo('ADDITIONAL_INFO')}>Next</Button>
         </View>
@@ -31,12 +44,6 @@ export default WorkflowHOC(Issue);
 
 const styles = StyleSheet.create({
   view: {
-    backgroundColor: 'green',
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center'
-  },
-  viewText: {
-    color: 'white'
+    backgroundColor: BRAND_COLOR
   }
 });

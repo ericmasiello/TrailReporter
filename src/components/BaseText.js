@@ -17,5 +17,5 @@ BaseText.propTypes = {
     React.PropTypes.object,
     React.PropTypes.number
   ]),
-  children: React.PropTypes.element.isRequired
+  children: React.PropTypes.string.isRequired
 };

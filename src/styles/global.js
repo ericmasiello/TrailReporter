@@ -28,5 +28,12 @@ export const COMMON_STYLES = StyleSheet.create({
   text: {
     color: TEXT_COLOR,
     fontFamily: Platform.OS === 'ios' ? 'Helvetica Neue' : 'sans-serif'
+  },
+  buttonBar: {
+    backgroundColor: BRAND_COLOR,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    paddingTop: 20
   }
 });

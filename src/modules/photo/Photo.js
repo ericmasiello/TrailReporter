@@ -1,17 +1,21 @@
 import React, {Component} from 'react';
-import {View, StyleSheet} from 'react-native';
+import {View, StyleSheet, TouchableOpacity} from 'react-native';
 import Camera from 'react-native-camera';
 import Button from '../../components/Button';
 import LinkButton from '../../components/LinkButton';
 import WorkflowHOC from '../../components/WorkflowHOC';
+import Icon from '../../components/Icon';
 import {COMMON_STYLES, BRAND_COLOR, BG_COLOR} from '../../styles/global';
 
 export class Photo extends Component {
   constructor(props) {
     super(props);
+    this.state = {capturedPhoto: false};
     this.capturePhoto = this.capturePhoto.bind(this);
   }
   capturePhoto() {
+    console.log('capturing photo');
+    this.setState({capturedPhoto: true}); //FIXME: REMOVE ME LATER
     //debugger;
     this.cam.capture({
       target: Camera.constants.CaptureTarget.disk
@@ -21,6 +25,8 @@ export class Photo extends Component {
       if (err) {
         return;
       }
+      //FIXME: Need to display the photo to the user before progressing...
+      //this.setState({capturedPhoto: true}); //FIXME: Uncomment me when wired up
       //this.props.savePhotoActionCreator(filePath);
     });
   }
@@ -33,9 +39,11 @@ export class Photo extends Component {
           type='cameraType: Camera.constants.Type.back'
           style={styles.camera}
           aspect={Camera.constants.Aspect.Fill} />
-        <View style={styles.buttonBar}>
+        <View style={COMMON_STYLES.buttonBar}>
           <LinkButton onPress={this.props.goBack}>Back</LinkButton>
-          <Button onPress={this.capturePhoto}>Photo</Button>
+          <TouchableOpacity onPress={this.capturePhoto}>
+            <Icon name={this.state.capturedPhoto ? 'check' : 'camera'} />
+          </TouchableOpacity>
           <LinkButton onPress={this.props.goTo('SELECT_ISSUE')}>Skip</LinkButton>
         </View>
       </View>
@@ -58,11 +66,5 @@ const styles = StyleSheet.create({
   camera: {
     flex: 1,
     backgroundColor: BG_COLOR
-  },
-  buttonBar: {
-    backgroundColor: BRAND_COLOR,
-    flexDirection: 'row',
-    justifyContent: 'center',
-    alignItems: 'center'
   }
 });
