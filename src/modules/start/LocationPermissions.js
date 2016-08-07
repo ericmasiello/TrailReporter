@@ -1,26 +1,37 @@
 import React, {Component} from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import {View, StyleSheet} from 'react-native';
+import BaseText from '../../components/BaseText';
 import Button from '../../components/Button';
 import LinkButton from '../../components/LinkButton';
+import Permissions from 'react-native-permissions';
+import {COMMON_STYLES, BRAND_COLOR} from '../../styles/global';
 
-export default (props) => {
-  return(
-    <View style={styles.home}>
-      <Text style={styles.homeText}>In order to help us identify where problems exist, we'll ned access to your location.</Text>
-      <Button onPress={props.reportAnIssue}>Get Started</Button>
-      <LinkButton onPress={props.goBack}>Go Back</LinkButton>
-    </View>
-  );
+export default class LocationPermissions extends Component {
+  componentDidMount() {
+    const self = this;
+    Permissions.getPermissionStatus('location').then(response => {
+      self.setState({
+        hasLocationPermissions: response === 'authorized' ? true : false
+      });
+    });
+  }
+
+  render() {
+    return(
+      <View style={[COMMON_STYLES.pageContainer, COMMON_STYLES.padTop, styles.view]}>
+        <BaseText>In order to help us identify where problems exist, we'll ned access to your location.</BaseText>
+        <Button onPress={this.props.reportAnIssue}>Get Started</Button>
+        <LinkButton onPress={this.props.goBack}>Go Back</LinkButton>
+      </View>
+    );
+  }
 }
 
 const styles = StyleSheet.create({
-  home: {
-    backgroundColor: 'green',
+  view: {
+    backgroundColor: BRAND_COLOR,
     flex: 1,
-    justifyContent: 'center',
+    justifyContent: 'space-between',
     alignItems: 'center'
-  },
-  homeText: {
-    color: 'white'
   }
 });

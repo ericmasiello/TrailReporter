@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import Permissions from 'react-native-permissions';
 import WorkflowHOC from '../../components/WorkflowHOC';
 
 export default function LocationHOC(Wrapped) {
@@ -10,21 +9,13 @@ export default function LocationHOC(Wrapped) {
       this.reportAnIssue = this.reportAnIssue.bind(this);
     }
 
-    componentWillMount() {
-      const self = this;
-      Permissions.getPermissionStatus('location').then(response => {
-        self.setState({
-          hasLocationPermissions: response === 'authorized' ? true : false
-        });
-      });
-    }
-
     reportAnIssue() {
       const {onUserSetLocation, goTo} = this.props;
-      if(!this.state.hasLocationPermissions) {
-        goTo('LOCATION_PERMISSIONS')();
-        return;
-      }
+      // FXIME...
+      // if(!this.state.hasLocationPermissions) {
+      //   goTo('LOCATION_PERMISSIONS')();
+      //   return;
+      // }
 
       navigator.geolocation.getCurrentPosition(position => {
         onUserSetLocation(position.coords)
