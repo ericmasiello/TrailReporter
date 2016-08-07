@@ -1,9 +1,8 @@
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
+import {connect} from 'react-redux';
 import Photo from './Photo';
 
-function mapStateToProps(){
+function mapStateToProps() {
   return {};
-};
+}
 
 export const PhotoContainer = connect(mapStateToProps, {})(Photo);

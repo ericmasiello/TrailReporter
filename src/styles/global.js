@@ -19,7 +19,7 @@ export const COMMON_STYLES = StyleSheet.create({
     paddingHorizontal: Platform.OS === 'ios' ? 10 : 0
   },
   padTop: {
-    paddingTop: ( DEVICE_HEIGHT / 2 ) - 40
+    paddingTop: (DEVICE_HEIGHT / 2) - 40
   },
   h1: {
     fontFamily: Platform.OS === 'ios' ? 'HelveticaNeue-CondensedBold' : 'sans-serif-condensed',
@@ -28,5 +28,5 @@ export const COMMON_STYLES = StyleSheet.create({
   text: {
     color: TEXT_COLOR,
     fontFamily: Platform.OS === 'ios' ? 'Helvetica Neue' : 'sans-serif'
-  },
+  }
 });

@@ -12,14 +12,16 @@ export default class LocationPermissions extends Component {
   }
 
   goBack() {
-    this.navigator.pop()
+    this.navigator.pop();
   }
 
   render() {
     console.log('rendering LocationPermissions');
-    return(
+    return (
       <View style={styles.home}>
-        <Text style={styles.homeText}>In order to help us identify where problems exist, we'll ned access to your location.</Text>
+        <Text style={styles.homeText}>
+          In order to help us identify where problems exist, we'll ned access to your location.
+        </Text>
         <Button onPress={this.reportAnIssue}>Get Started</Button>
         <LinkButton onPress={this.goBack}>Go Back</LinkButton>
       </View>

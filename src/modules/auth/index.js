@@ -39,6 +39,7 @@ export default function AuthStateReducer(state = initialState, action = {}) {
         .set('authenticationToken', action.payload.token);
     case USER_LOGIN_ERROR:
       return initialState;
+    default:
+      return state;
   }
-  return state;
 }

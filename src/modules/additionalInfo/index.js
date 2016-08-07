@@ -1,9 +1,8 @@
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
+import {connect} from 'react-redux';
 import AdditionalInfo from './AdditionalInfo';
 
-function mapStateToProps(){
+function mapStateToProps() {
   return {};
-};
+}
 
 export const AdditionalInfoContainer = connect(mapStateToProps, {})(AdditionalInfo);

@@ -14,21 +14,21 @@ const styles = StyleSheet.create({
     backgroundColor: 'transparent',
     borderRadius: 5,
     paddingVertical: 8,
-    paddingHorizontal: 15,
+    paddingHorizontal: 15
   },
   largeButton: {
     paddingVertical: 18,
-    paddingHorizontal: 24    
+    paddingHorizontal: 24
   },
   disabledButton: {
     borderColor: `${globalStyles.TEXT_COLOR}55`
   },
   text: {
     color: globalStyles.TEXT_COLOR,
-    fontWeight: 'bold',
+    fontWeight: 'bold'
   },
   disabledText: {
-    color: `${globalStyles.TEXT_COLOR}55`,
+    color: `${globalStyles.TEXT_COLOR}55`
   }
 });
 
@@ -36,17 +36,17 @@ const SIZES = {
   large: styles.largeButton
 };
 
-export default Button = (props) => {
+export default function Button(props) {
 
-  var {style, active, onPress, size, ...otherProps} = props;
+  var {children, style, active, onPress, size, ...otherProps} = props;
   const buttonStyles = [styles.button, style];
   const textStyles = [styles.text];
 
-  if(active === false){
+  if (active === false) {
     onPress = null;
     buttonStyles.push(styles.disabledButton);
     textStyles.push(styles.disabledText);
-  };
+  }
 
   return (
     <TouchableOpacity
@@ -54,13 +54,12 @@ export default Button = (props) => {
       onPress={onPress}
       {...otherProps}
       style={[buttonStyles, SIZES[size]]}>
-      <Text style={[textStyles]}>{props.children}</Text>
+      <Text style={[textStyles]}>{children}</Text>
     </TouchableOpacity>
-  )
-};
+  );
+}
 
 Button.displayName = 'Button';
-
 Button.propTypes = {
   active: React.PropTypes.bool,
   style: React.PropTypes.oneOfType([
@@ -68,5 +67,7 @@ Button.propTypes = {
     React.PropTypes.object,
     React.PropTypes.number
   ]),
-  onPress: React.PropTypes.func
+  onPress: React.PropTypes.func,
+  size: React.PropTypes.string,
+  children: React.PropTypes.string.isRequired
 };

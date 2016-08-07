@@ -1,3 +1,4 @@
+/* global navigator */
 import React, {Component} from 'react';
 import WorkflowHOC from '../../components/WorkflowHOC';
 
@@ -18,15 +19,21 @@ export default function LocationHOC(Wrapped) {
       // }
 
       navigator.geolocation.getCurrentPosition(position => {
-        onUserSetLocation(position.coords)
+        onUserSetLocation(position.coords);
         goTo('TAKE_PHOTO')();
       });
     }
 
-    render(){
-      return <Wrapped {...this.props} reportAnIssue={this.reportAnIssue} goBack={this.goBack} />
+    render() {
+      return <Wrapped {...this.props} reportAnIssue={this.reportAnIssue} goBack={this.goBack} />;
     }
   }
+
+  LocationHOCComponent.displayName = 'LocationHOCComponent';
+  LocationHOCComponent.propTypes = {
+    onUserSetLocation: React.PropTypes.func.isRequired,
+    goTo: React.PropTypes.func.isRequired
+  };
 
   return WorkflowHOC(LocationHOCComponent);
 }

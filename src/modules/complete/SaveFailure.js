@@ -8,7 +8,7 @@ export class SaveFailure extends Component {
     super(props);
   }
   render() {
-    return(
+    return (
       <View style={styles.view}>
         <Text style={styles.viewText}>Save Failure</Text>
         <View>
@@ -18,6 +18,11 @@ export class SaveFailure extends Component {
     );
   }
 }
+
+SaveFailure.displayName = 'SaveFailure';
+SaveFailure.propTypes = {
+  goTo: React.PropTypes.func.isRequired
+};
 
 export default WorkflowHOC(SaveFailure);
 

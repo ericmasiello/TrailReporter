@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import {View, StyleSheet} from 'react-native';
 import Camera from 'react-native-camera';
 import Button from '../../components/Button';
 import LinkButton from '../../components/LinkButton';
@@ -12,24 +12,24 @@ export class Photo extends Component {
     this.capturePhoto = this.capturePhoto.bind(this);
   }
   capturePhoto() {
-    debugger;
+    //debugger;
     this.cam.capture({
       target: Camera.constants.CaptureTarget.disk
     }, (err, filePath) => {
       console.log('Got into capture', filePath);
-      debugger;
-      if(err) {
+      //debugger;
+      if (err) {
         return;
       }
       //this.props.savePhotoActionCreator(filePath);
     });
   }
   render() {
-    debugger
-    return(
+    //debugger
+    return (
       <View style={[COMMON_STYLES.pageContainer, styles.view]}>
         <Camera
-          ref={(c) => this.cam = c}
+          ref={(c) => {this.cam = c;}}
           type='cameraType: Camera.constants.Type.back'
           style={styles.camera}
           aspect={Camera.constants.Aspect.Fill} />
@@ -43,11 +43,17 @@ export class Photo extends Component {
   }
 }
 
+Photo.displayName = 'Photo';
+Photo.propTypes = {
+  goTo: React.PropTypes.func.isRequired,
+  goBack: React.PropTypes.func.isRequired
+};
+
 export default WorkflowHOC(Photo);
 
 const styles = StyleSheet.create({
   view: {
-    backgroundColor: BRAND_COLOR,
+    backgroundColor: BRAND_COLOR
   },
   camera: {
     flex: 1,

@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 
 export default (WrappedComponent) => {
-  return class WorkflowHOC extends Component {
+  class WorkflowHOC extends Component {
     constructor(props) {
       super(props);
       this.goTo = this.goTo.bind(this);
@@ -18,7 +18,14 @@ export default (WrappedComponent) => {
       this.props.navigator.pop();
     }
     render() {
-      return <WrappedComponent {...this.props} goTo={this.goTo} goBack={this.goBack} />
+      return <WrappedComponent {...this.props} goTo={this.goTo} goBack={this.goBack} />;
     }
   }
+
+  WorkflowHOC.displayName = 'WorkflowHOC';
+  WorkflowHOC.propTypes = {
+    navigator: React.PropTypes.object.isRequired
+  };
+
+  return WorkflowHOC;
 };

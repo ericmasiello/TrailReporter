@@ -1,9 +1,8 @@
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
+import {connect} from 'react-redux';
 import Issue from './Issue';
 
-function mapStateToProps(){
+function mapStateToProps() {
   return {};
-};
+}
 
 export const IssueContainer = connect(mapStateToProps, {})(Issue);

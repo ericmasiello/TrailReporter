@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import {View, StyleSheet, Navigator} from 'react-native';
-import * as auth0 from '../services/auth0';
+import {View, Navigator} from 'react-native';
+//import * as auth0 from '../services/auth0';
 import DeveloperMenu from '../components/DeveloperMenu';
 //import ROUTES, {DEFAULT_ROUTE} from '../../config/routes';
 import {HomeContainer, LocationPermissionsContainer} from '../modules/start';
@@ -30,8 +30,6 @@ export default class Root extends Component {
   }
 
   renderScene(route, navigator) {
-    var routes = ROUTES;
-    var defRoute = DEFAULT_ROUTE;
     const props = {
       route,
       navigator
@@ -47,8 +45,7 @@ export default class Root extends Component {
         <Navigator
           initialRoute={{name: ROUTES[DEFAULT_ROUTE]}}
           renderScene={this.renderScene}
-          style={{padding: 0, flex: 1}}>
-        </Navigator>
+          style={{padding: 0, flex: 1}} />
         {__DEV__ && <DeveloperMenu />}
       </View>
     );

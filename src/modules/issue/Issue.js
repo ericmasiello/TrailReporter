@@ -9,7 +9,7 @@ export class Issue extends Component {
     super(props);
   }
   render() {
-    return(
+    return (
       <View style={styles.view}>
         <Text style={styles.viewText}>This is the issue view</Text>
         <View>
@@ -20,6 +20,12 @@ export class Issue extends Component {
     );
   }
 }
+
+Issue.displayName = 'Issue';
+Issue.propTypes = {
+  goTo: React.PropTypes.func.isRequired,
+  goBack: React.PropTypes.func.isRequired
+};
 
 export default WorkflowHOC(Issue);
 

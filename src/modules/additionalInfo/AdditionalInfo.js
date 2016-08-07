@@ -9,7 +9,7 @@ export class AdditionalInfo extends Component {
     super(props);
   }
   render() {
-    return(
+    return (
       <View style={styles.view}>
         <Text style={styles.viewText}>This is the additional info view</Text>
         <View>
@@ -20,6 +20,12 @@ export class AdditionalInfo extends Component {
     );
   }
 }
+
+AdditionalInfo.displayName = 'AdditionalInfo';
+AdditionalInfo.propTypes = {
+  goTo: React.PropTypes.func.isRequired,
+  goBack: React.PropTypes.func.isRequired
+};
 
 export default WorkflowHOC(AdditionalInfo);
 

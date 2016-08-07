@@ -8,7 +8,7 @@ export class SaveSuccess extends Component {
     super(props);
   }
   render() {
-    return(
+    return (
       <View style={styles.view}>
         <Text style={styles.viewText}>Save Success</Text>
         <View>
@@ -18,6 +18,11 @@ export class SaveSuccess extends Component {
     );
   }
 }
+
+SaveSuccess.displayName = 'SaveSuccess';
+SaveSuccess.propTypes = {
+  goTo: React.PropTypes.func.isRequired
+};
 
 export default WorkflowHOC(SaveSuccess);
 

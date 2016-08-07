@@ -4,18 +4,18 @@ import {
 } from 'react-native';
 import Button from './Button';
 
-export default LinkButton = (props) => {
-  var {style, ...otherProps} = props;
+export default function LinkButton(props) {
+  var {children, style, ...otherProps} = props;
   const buttonStyles = [styles.button, style];
 
   return (
     <Button
       {...otherProps}
       style={buttonStyles}>
-      {props.children}
+      {children}
     </Button>
-  )
-};
+  );
+}
 
 LinkButton.displayName = 'LinkButton';
 LinkButton.propTypes = {
@@ -23,12 +23,13 @@ LinkButton.propTypes = {
     React.PropTypes.array,
     React.PropTypes.object,
     React.PropTypes.number
-  ])
+  ]),
+  children: React.PropTypes.string.isRequired
 };
 
 const styles = StyleSheet.create({
   button: {
     borderWidth: 0,
-    backgroundColor: 'transparent',
+    backgroundColor: 'transparent'
   }
 });

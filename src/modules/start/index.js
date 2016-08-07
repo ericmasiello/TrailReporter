@@ -1,5 +1,4 @@
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
+import {connect} from 'react-redux';
 import Home from './Home';
 import LocationPermissions from './LocationPermissions';
 import LocationHOC from './LocationHOC';
@@ -26,17 +25,18 @@ export function onUserSetLocation(payload) {
 
 // Reducer
 export function LocationReducer(state = INITIAL_LOCATION_STATE, action = {}) {
-  switch(action.type) {
+  switch (action.type) {
     case SET_CURRENT_LOCATION:
-      return action.payload
+      return action.payload;
+    default:
+      return state;
   }
-  return state;
-};
-
+}
 
 function mapStateToProps({location}) {
   return {location};
-};
+}
 
 export const HomeContainer = connect(mapStateToProps, {onUserSetLocation})(LocationHOC(Home));
-export const LocationPermissionsContainer = connect(mapStateToProps, {onUserSetLocation})(LocationHOC(LocationPermissions));
+export const LocationPermissionsContainer =
+  connect(mapStateToProps, {onUserSetLocation})(LocationHOC(LocationPermissions));
