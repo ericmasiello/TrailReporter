@@ -3,7 +3,6 @@ import { bindActionCreators } from 'redux';
 import Home from './Home';
 import LocationPermissions from './LocationPermissions';
 import LocationHOC from './LocationHOC';
-import WorkflowHOC from '../../components/WorkflowHOC';
 
 const INITIAL_LOCATION_STATE = {
   accuracy: 0,

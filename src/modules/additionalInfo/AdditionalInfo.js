@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 import Button from '../../components/Button';
+import LinkButton from '../../components/LinkButton';
 import WorkflowHOC from '../../components/WorkflowHOC';
 
 export class AdditionalInfo extends Component {
@@ -12,7 +13,7 @@ export class AdditionalInfo extends Component {
       <View style={styles.view}>
         <Text style={styles.viewText}>This is the additional info view</Text>
         <View>
-          <Button onPress={this.props.goBack}>Back</Button>
+          <LinkButton onPress={this.props.goBack}>Back</LinkButton>
           <Button onPress={this.props.goTo('SAVE_SUCCESS')}>Next</Button>
         </View>
       </View>

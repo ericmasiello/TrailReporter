@@ -1,6 +1,8 @@
 package com.trailreporter;
 
 import com.facebook.react.ReactActivity;
+import com.oblador.vectoricons.VectorIconsPackage;
+import com.smixx.reactnativeicons.ReactNativeIcons;
 import com.joshblour.reactnativepermissions.ReactNativePermissionsPackage;
 
 public class MainActivity extends ReactActivity {

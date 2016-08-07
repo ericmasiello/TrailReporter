@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 import Button from '../../components/Button';
+import LinkButton from '../../components/LinkButton';
 import WorkflowHOC from '../../components/WorkflowHOC';
 
 export class Issue extends Component {
@@ -12,7 +13,7 @@ export class Issue extends Component {
       <View style={styles.view}>
         <Text style={styles.viewText}>This is the issue view</Text>
         <View>
-          <Button onPress={this.props.goBack}>Back</Button>
+          <LinkButton onPress={this.props.goBack}>Back</LinkButton>
           <Button onPress={this.props.goTo('ADDITIONAL_INFO')}>Next</Button>
         </View>
       </View>

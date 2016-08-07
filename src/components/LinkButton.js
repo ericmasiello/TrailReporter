@@ -2,11 +2,9 @@ import React from 'react';
 import {
   StyleSheet
 } from 'react-native';
-
 import Button from './Button';
 
 export default LinkButton = (props) => {
-
   var {style, ...otherProps} = props;
   const buttonStyles = [styles.button, style];
 

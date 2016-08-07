@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
 import Permissions from 'react-native-permissions';
+import WorkflowHOC from '../../components/WorkflowHOC';
 
 export default function LocationHOC(Wrapped) {
-  return class extends Component {
+  class LocationHOCComponent extends Component {
     constructor(props) {
       super(props);
       this.state = {hasLocationPermissions: false};
       this.reportAnIssue = this.reportAnIssue.bind(this);
-      this.goBack = this.goBack.bind(this);
     }
 
     componentWillMount() {
@@ -20,24 +20,22 @@ export default function LocationHOC(Wrapped) {
     }
 
     reportAnIssue() {
-      const {onUserSetLocation, navigator: routeNavigator} = this.props;
+      const {onUserSetLocation, goTo} = this.props;
       if(!this.state.hasLocationPermissions) {
-        routeNavigator.push({name: 'LOCATION_PERMISSIONS'});
+        goTo('LOCATION_PERMISSIONS')();
         return;
       }
 
       navigator.geolocation.getCurrentPosition(position => {
         onUserSetLocation(position.coords)
-        routeNavigator.push({name: 'TAKE_PHOTO'});
+        goTo('TAKE_PHOTO')();
       });
-    }
-
-    goBack() {
-      this.props.navigator.pop();
     }
 
     render(){
       return <Wrapped {...this.props} reportAnIssue={this.reportAnIssue} goBack={this.goBack} />
     }
   }
+
+  return WorkflowHOC(LocationHOCComponent);
 }
